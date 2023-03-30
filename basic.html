@@ -25,23 +25,25 @@
                 border: 1px solid gray;
                 padding-left: 10px;
                 padding-bottom: 10px;
-                width: 25%;
+                width: 50%;
             }
             .bar_label {
                 color: red;
             }
             #longest {
-                width: 300px;
+                width: 500px;
                 height: 10px;
                 background: gray;
                 border: 1px solid red;
             }
             #longer {
+                width: 400px;
                 height: 10px;
                 background: gray;
                 border: 1px solid red;
             }
             #long {
+                width: 300px;
                 height: 10px;
                 background: gray;
                 border: 1px solid red;
@@ -111,8 +113,7 @@
         <!-- Include: an unordered list of at least three books, list items should have a border -->
         <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
             <ul>
-                <li>The Secret History</li>
-                <Li>The Goldfinch</Li>
+                <li><book>The Secret History</book></Li>
                 <li>The Song of Achilles</li>
                 <li>The Picture of Dorian Gray</li>
                 <li>We All Looked Up</li>
@@ -129,12 +130,12 @@
         <!-- Challenge! Add CSS styles to '#longer' and '#long' to make the bar graph look like it's ordered from longest to shortest. You may also change the h4 text and the p text to make this simple bar chart reflect real (or fake) data. -->
 
         <div id="bargraph">
-            <h4>Length of bars</h4>
-            <p class="bar_label">Longest</p>
+            <h4>Demographics of People Who Agree that I'm Awesome</h4>
+            <p class="bar_label">Fans</p>
             <div id="longest"></div>
-            <p class="bar_label">Longer</p>
+            <p class="bar_label">My friends and Fam</p>
             <div id="longer"></div>
-            <p class="bar_label">Long</p>
+            <p class="bar_label">Haters</p>
             <div id="long"></div>
         </div>
      
