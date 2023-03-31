@@ -1,5 +1,4 @@
 <!-- Complete this worksheet in HTML and CSS. Instructions are as comments; you may use reference_sheet.html and the internet to jog your memory on HTML tags and CSS. -->
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,19 +7,28 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         
         <style>
+
+           
+            }
         
             p {
-                color: darkgray;
+                color: darkslategray;
                 font-size: 16px;
                 font-family: 'Open Sans', serif;
                 width: 50%;
             }
-            #quote {
-                color: magenta;
+            .book {
+                color: darkgray;
+                font-size: 16px;
+                font-family: 'Open Sans', serif;
+                width: 50%;
                 font-style: italic;
-                border: solid lightskyblue 2px;
             }
-
+            #quote {
+                color: black;
+                font-style: italic;
+                border: solid deeppink; 2px;
+            }
             #bargraph {
                 border: 1px solid gray;
                 padding-left: 10px;
@@ -47,85 +55,82 @@
                 height: 10px;
                 background: gray;
                 border: 1px solid red;
+  
             }
-
+            #byline {
+                color: darkred;
+           
         </style>
     </head>
     
     <body>
-
-        <h1>A little bit about me!</h1>
+        <h1 class="alert">A little bit about me!</h1>
         
-        <p>My name is Haley Moreland, and I'm from Pittsburgh, Pennsylvania (not that popular, but we have Mac Miller and a lot of bridges). I like to read and I try to write frequently, so it's no surprise that I'm studying journalism (just on the broadcast side). I'm apart of the Syracuse community, but I also write for Jerk Magazine and the Pittsburgh Tribune Review.</p>
+        <p>My name is <strong>Haley Moreland</strong>, and I'm from <i>Pittsburgh</i> (not that popular, but we have Mac Miller and a lot of bridges). I like to read and I try to write frequently, so it's no surprise that I'm studying journalism (just on the broadcast side). I'm apart of the Syracuse community, but I also write for Jerk Magazine and the Pittsburgh Tribune Review.</p>
         <!-- Include: a brief intro to yourself -- where you're from, what you like to do for fun, what you're studying, and who your community or family is. -->
         <!-- Tags to use: <p>, <strong>, <i> -->
         
-
-        <p>Instagram: @haleyj.moreland </p>
-        <p>Spotify (if you care what I'm listening to): @morelandhaley</p>
+        <p>Instagram: <a href="https://www.instagram.com/haleyj.moreland/">@haleyj.moreland </a></p>
+        <p>Spotify, if you care what I'm listening to: <a href="https://open.spotify.com/user/morelandhaley?si=64f6438d8cf54265@morelandhaley ">@morelandhaley</a></p>
         <!-- Include: at least two handles for your social media accounts -->
         <!-- Tags to use: <p>, <a> -->
-
     
         <h2> ~ Challenge: Why is my text maroon? ~</h2>
         <!-- Challenge! The text in your p tags is currently maroon. Figure out why and make it dark gray, using a hex code. (Hint: use google to find a hex code for a dark gray) When you're done, change the text in the <p> tag below to "My text is gray." -->
         <p>My text WAS maroon.</p>
-
-
         <h2>My favorite meme</h2>
         <!-- Include: "large_wink.png" as an image -->
         <!-- Tags to use: <img> -->
         <!-- Hint! Use 'reference_sheet.html', which you downloaded with this file, to remember how to include an image. -->
         <img src="large_wink.png">
-
     
         <h2>Why I'm a great student</h2>
         <!-- Include: Use 'reference_sheet.html' to figure out how to add an unordered list here -->
         <!-- Tags to use: <ul>, <li>, <strong> -->
         <ul>
-            <li>I study super hard</li>
+            <li><strong>I study super hard</li>
             <li>I really love my major</li>
-            <li>I need to get a degree to get a job</li>
-            <li>Crippling fear of failure?</li>
+            <li>I need to get a degree to get a job and feed myself</li>
+            <li>Crippling fear of failure?</strong></li>
 
+        </ul>
     
         <h2>Top 3 most famous people from my hometown</h2>
         <!-- Include: an ordered list -->
         <!-- Tags to use: <ol>, <li>, <a> -->
             <ol>
-                <li>Mac Miller</li>
-                <li>Andy Warhol</li>
-                <li>Andrew Carnegie</li>
-
+                <li><a href="https://en.wikipedia.org/wiki/Mac_Miller"> Mac Miller</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Andy_Warhol">Andy Warhol </a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Jeff_Goldblum"> Jeff Goldblum</a></li>
 
         <h2> ~ Challenge: Read my poetry ~</h2>
         <!-- Challenge! Use the internet to figure out what a <br> tag is. Write a short poem about your college experience so far. -->
         <!-- Tags to use: <p> tags for your lines of poetry, and at least two <br> tags -->
             <p><strong>I was dropped here in this place<br>In a dorm with little space<br>But I made some cool friends<br>And now I'm a campus ace</strong></p>
-
     
         <h2>This is one of my favorite quotes</h2>
         <!-- Include: a quote from a book -- quote should be in italics and gray, title of source should be in an <h3> tag -->
         <!-- Tags to use: <h3>, <p> with an id named 'quote' that is styled in the <style> section -->
-        <p><i>“I had the epiphany that laughter was light, and light was laughter, and that this was the secret of the universe.” - Donna Tartt, The Goldfinch</i></p>
 
+       <h3>Goodreads</h3>
+        <p id="quote"><i>“I had the epiphany that laughter was light, and light was laughter, and that this was the secret of the universe.” - Donna Tartt, The Goldfinch</i></p>
         <h2>These are more of my favorite books</h2>
         <!-- Include: an unordered list of at least three books, list items should have a border -->
         <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
-            <ul>
-                <li><book>The Secret History</book></Li>
+            <ul class="book">
+                <li>The Scret History</li>
                 <li>The Song of Achilles</li>
                 <li>The Picture of Dorian Gray</li>
                 <li>We All Looked Up</li>
                 <li>The Perks of Being a Wallflower</li>
-        
-        <h2>Here's how I normally spend my week</h2>
+            </ul>
+
+
+         <h2>Here's how I normally spend my week</h2>
         <!-- Include: a complete Datawrapper chart (you can make up data) showing what you normally spend time on over the weekend; must include all requirements of a complete chart (hed, subhed, intentional colors, byline, etc.) -->
         <!-- Tags to use: <iframe> -->
             <iframe title="Time Spent During the Week" aria-label="Bar Chart" id="datawrapper-chart-n85Wy" src="https://datawrapper.dwcdn.net/n85Wy/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="271" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
-
-
         <h3>~ Challenge: A very simple bar graph ~</h3>
         <!-- Challenge! Add CSS styles to '#longer' and '#long' to make the bar graph look like it's ordered from longest to shortest. You may also change the h4 text and the p text to make this simple bar chart reflect real (or fake) data. -->
 
@@ -138,6 +143,6 @@
             <p class="bar_label">Haters</p>
             <div id="long"></div>
         </div>
-     
+
     </body>
 </html>
